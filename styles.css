@@ -6,7 +6,157 @@
     font-style: normal;
     font-display: swap;
 }
+:root {
+    display: flex;
+    justify-content: center;
+    line-height: 1.2;
+    font-family: Roboto;
+    
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
 
 .leafy-bg {
-    background-color: rgb(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.odin-logo {
+    height: 8rem;
+}
+    
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-family: 'Norse';
+    font-size: 3rem;
+
+}
+
+.sign-up-section {
+    background-color: #f9fafb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    width: 50%;
+    
+}
+
+.sign-up-section > * {
+    padding-left: 5%;
+    padding-right: 40%;
+
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #353c48;
+    background-color: #ffffff;
+    background-clip: border-box;
+    padding-bottom: 32px;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.2);
+}
+
+.photo-author {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    margin-top: auto;
+    align-self: center;
+}
+
+.bg-author,
+.unsplash {
+    text-decoration: underline;
+}
+
+.description,
+.quote {
+    font-weight: bold;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    border:0;
+    font-size: 14px;
+    border-radius: 8px;
+    min-height: 40px;
+    min-width: 200px;
+    
+}
+
+.existing-user {
+    font-size: 14px;
+}
+
+a {
+    color:#596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.know {
+    font-style: italic;
+}
+
+label {
+    box-sizing: border-box;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    gap: 64px;
+    width: 350px;
+}
+
+input {
+    font-family: monospace;
+    appearance: none;
+    border: solid rgb(0, 0, 0, 0.1) 0.5px;
+    border-radius: 3px;
+    height: 1.5rem;
+    padding-left: 5%;
+}
+
+:valid {
+    border: solid green 1px;
+}
+
+:user-invalid {
+    border: solid red 1px;
+}
+
+input:focus {
+    outline-style: solid;
+    outline-color: blue;
+}
+
+
+h1 {
+    margin: 16px;
 }

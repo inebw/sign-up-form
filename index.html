@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <div class="leafy-bg">
         <div class="logo">
-            <img src="img/odin-lined.png" alt="odin-logo">
+            <img class= 'odin-logo' src="img/odin-lined.png" alt="odin-logo">
             <h1>ODIN</h1>
         </div>
-        <p>Photo by <span class="bg-author">Halie West</span> on <span class="unsplash">Unsplash</span></p>
+        <p class="photo-author">Photo by <span class="bg-author">Halie West</span> on <span class="unsplash">Unsplash</span></p>
     </div>
 
     <div class="sign-up-section">
 
         <div class="description">
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign uo
+            this in your life to help you realize your deepest dreams. Sign up
             now to get started.
         </div>
 
         <div class="quote">
-            You know you want to.
+            You <span class="know">know</span> you want to.
         </div>
 
         <form id="sign-up-form" action="https://httpbin.org/post" method="post">
             <h2>Let's do this!</h2>
 
-            <div class="full-name">
+            <div class="row">
                 <div class="first-name">
                     <label for="first-name">FIRST NAME</label>
                     <input type="text" id="first-name" name="first-name" minlength="3" maxlength="32" pattern="[a-zA-Z]+" required>
@@ -42,7 +45,7 @@
                 </div>
             </div>
 
-            <div class="contact-info">
+            <div class="row">
                 <div class="user-email">
                     <label for="user-email">EMAIL</label>
                     <input type="email" id="user-email" name="user-email" required>
@@ -53,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="pass-info">
+            <div class="row">
                 <div class="password">
                     <label for="password">PASSWORD</label>
                     <input type="password" id="password" name="password" minlength="8" maxlength="32" required>
